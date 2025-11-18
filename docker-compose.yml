@@ -37,7 +37,7 @@ services:
     container_name: worklenz_minio
     ports:
       - "9002:9002"
-      - "9001:9001"
+      - "9003:9003"
     restart: unless-stopped
     environment:
       MINIO_ROOT_USER: ${S3_ACCESS_KEY_ID:-minioadmin}
